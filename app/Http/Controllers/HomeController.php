@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\FashionTable;
 
 class HomeController extends Controller
 {
     public function home(){
-        return view('user.master');
+        $slider=FashionTable::where('status',true)->get();
+        return view('user.master',['sliders'=>$slider]);
     }
     public function contact(){
         return view('user.head.contact');
