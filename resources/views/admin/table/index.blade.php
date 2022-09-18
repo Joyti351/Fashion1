@@ -24,6 +24,7 @@
                   <th>heading2</th>
                   <th>description</th>
                   <th>bg_image</th>
+                  <th>status</th>
                   
                   
                 </tr>

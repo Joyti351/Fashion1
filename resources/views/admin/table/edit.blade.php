@@ -37,7 +37,7 @@
                   <div class="form-group">
                     <label for="exampleInputPassword1">bg_image</label>
                     <input type="file" name="image" class="form-control" id="exampleInputPassword1" >
-                    <img src="{{asset($key->bg_image)}}}" width="110px" height="80px" alt="no image"/>
+                    <img src="{{asset($key->bg_image)}}" width="110px" height="80px" alt="no image"/>
                     <p class="text-danger"></p>
                   </div>
 
@@ -45,12 +45,12 @@
 
                 <div class="form-group mb-0">
                   <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="status" class="custom-control-input" {{$key->status==true ? 'checked' : ''}}  />
+                    <input type="checkbox" name="status" class="custom-control-input" id="exampleCheck"{{$key->status==true ? 'checked' : ''}}  />
                     <label class="custom-control-label" for="exampleCheck1">Active </label>
                   </div>
                 </div>
               </div>
-              <input type="hidden" name="id" value=""/>
+              <input type="hidden" name="id" value="{{$key->id}}"/>
               <!-- /.card-body -->
               <div class="card-footer">
                 <button type="submit" class="btn btn-primary">Submit</button>
