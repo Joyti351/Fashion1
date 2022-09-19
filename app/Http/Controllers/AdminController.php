@@ -35,6 +35,7 @@ class AdminController extends Controller
         }
         FashionTable::create($data);
         return redirect()->to('slider-index');
+        
     }
     public function index(){
         //quary

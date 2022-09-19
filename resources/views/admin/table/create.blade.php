@@ -13,7 +13,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form role="form" action="{{url('slider.store')}}" method="post" id="quickForm"       
+          <form role="form" action="{{url('slider-store')}}" method="post" id="quickForm"       
             enctype="multipart/form-data">
             @csrf
             <div class="card-body">
