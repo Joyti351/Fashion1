@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\http\controllers\HomeController;
 use App\http\controllers\AdminController;
+use App\http\controllers\BannerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,5 +39,10 @@ Route::post('/slider-store',[AdminController::class,'store']);
 Route::get('/slider-index',[AdminController::class,'index']);
 Route::get('/slider-view/{id}',[AdminController::class,'view']);
 Route::get('/slider-edit/{id}',[AdminController::class,'edit']);
+Route::post('/slider-update',[AdminController::class,'update']);
 Route::get('/slider-delete/{id}',[AdminController::class,'delete']);
+
+//BannerSite
+Route::get('/banner-link',[BannerController::class,'BannerForm']);
+Route::get('/banner-index',[BannerController::class,'BannerIndex']);
 

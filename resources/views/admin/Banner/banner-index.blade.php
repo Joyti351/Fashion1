@@ -25,10 +25,13 @@
               <thead>
                 <tr>
                   <th>id</th>
+                  <th>Banner_image_1</th>
                   <th>heading1</th>
+                  <th>Banner_image_2</th>
                   <th>heading2</th>
-                  <th>description</th>
-                  <th>bg_image</th>
+                  <th>Banner_image_3</th>
+                  <th>heading3</th>
+
                   <th>status</th>
 
 
@@ -42,9 +45,11 @@
                   <td>{{$loop->iteration}}</td>
                   <td>{{$value->heading1}}</td>
                   <td>{{$value->heading2}}</td>
-                  <td>{{$value->description}}</td>
+                  <td>{{$value->heading3}}</td>
 
-                  <td><img src="{{asset($value->bg_image)}}" width="90px"  heigh="70px" alt="no image" /></td>
+                  <td><img src="{{asset($value->banner_image_1)}}" width="90px"  heigh="70px" alt="no image" /></td>
+                  <td><img src="{{asset($value->bg_image_2)}}" width="90px"  heigh="70px" alt="no image" /></td>
+                  <td><img src="{{asset($value->bg_image_3)}}" width="90px"  heigh="70px" alt="no image" /></td>
                   <td>@if($value->status == true) <span class = "text-info" > Active </span> @else <span class = "text-danger" > Inactive </span> @endif</td>
                   <td>
                     <a type="button" href="{{url('slider-edit', $value->id)}}" class="btn btn-secondary"><i class="far fa-edit"></i></a>

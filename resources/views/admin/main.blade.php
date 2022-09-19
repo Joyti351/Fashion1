@@ -64,10 +64,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="dash/plugins/jquery/jquery.min.js"></script>
+<script src="{{asset('dash/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap 4 -->
-<script src="dash/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('dash/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="dash/dist/js/adminlte.min.js"></script>
+<script src="{{asset('dash/dist/js/adminlte.min.js')}}"></script>
 </body>
 </html>

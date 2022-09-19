@@ -8,8 +8,8 @@ use App\Models\FashionTable;
 class HomeController extends Controller
 {
     public function home(){
-        $slider=FashionTable::where('status',true)->get();
-        return view('user.master',['sliders'=>$slider]);
+        $data['sliders'] = FashionTable::where('status',true)->get();
+        return view('user.master',['data'=>$data]);
     }
     public function contact(){
         return view('user.head.contact');

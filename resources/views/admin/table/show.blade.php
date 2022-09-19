@@ -1,4 +1,4 @@
-@extends('user.main')
+@extends('admin.main')
 @section('content')
 
 <section class="content">
@@ -13,14 +13,24 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            
+
               <div class="card-body">
 
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Name</label>
+                  <label for="exampleInputEmail1">heading1</label>
                   <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->heading1}}"/>
                   <p class="text-danger"> </p>
                 </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">heading2</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->heading2}}"/>
+                    <p class="text-danger"> </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Description</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->description}}"/>
+                    <p class="text-danger"> </p>
+                  </div>
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">bg_image</label>
@@ -41,7 +51,7 @@
               <div class="card-footer">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
-            
+
           </div>
           <!-- /.card -->
           </div>

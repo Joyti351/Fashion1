@@ -2,8 +2,8 @@
 @section('content')
 <section class="hero">
     <div class="hero__slider owl-carousel">
-        @foreach ($sliders as $slider )
-        
+        @foreach ($data['sliders'] as $slider )
+
         <div class="hero__items set-bg" data-setbg="{{asset($slider->bg_image)}}">
             <div class="container">
                 <div class="row">

@@ -1,4 +1,4 @@
-@extends('user.main')
+@extends('admin.main')
 @section('content')
 
 <section class="content">
@@ -13,12 +13,12 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form role="form" action="" method="post" id="quickForm" enctype="multipart/form-data">
+            <form role="form" action="{{url('slider-update')}}" method="post" id="quickForm" enctype="multipart/form-data">
                 @csrf
               <div class="card-body">
 
-                
-                
+
+
                 <div class="form-group">
                   <label for="exampleInputEmail1">heading1</label>
                   <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->heading1}}"/>
@@ -41,7 +41,7 @@
                     <p class="text-danger"></p>
                   </div>
 
-                
+
 
                 <div class="form-group mb-0">
                   <div class="custom-control custom-checkbox">
