@@ -23,6 +23,7 @@ Route::get('/index.html',[HomeController::class,'index']);
 Route::get('/shop.html',[HomeController::class,'shop']);
 Route::get('/blog.html',[HomeController::class,'blog']);
 Route::get('/contact.html',[HomeController::class,'contact']);
+Route::get('/sing-in',[HomeController::class,'sing_in']);
 //usersite.page
 Route::get('/about.html',[HomeController::class,'about']);
 Route::get('/shop-details.html',[HomeController::class,'ShopDetails']);
@@ -44,6 +45,7 @@ Route::get('/slider-delete/{id}',[AdminController::class,'delete']);
 
 //BannerSite
 Route::get('/banner-create',[BannerController::class,'BannerForm']);
-Route::get('/banner-index',[BannerController::class,'BannerIndex']);
 Route::post('/banner-store',[BannerController::class,'BannerStore']);
+Route::post('/banner-index',[BannerController::class,'BannerIndex']);
+
 

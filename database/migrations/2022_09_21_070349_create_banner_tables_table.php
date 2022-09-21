@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('banner_tables', function (Blueprint $table) {
             $table->id();
-            $table->string('banner_image_1');
+            $table->string('banner_image_1')->nullable();
             $table->string('heading_1');
-            $table->string('banner_image_2');
+            $table->string('banner_image_2')->nullable();
             $table->string('heading_2');
-            $table->string('banner_image_3');
+            $table->string('banner_image_3')->nullable();
             $table->string('heading_3');
             $table->boolean('status');
             $table->timestamps();

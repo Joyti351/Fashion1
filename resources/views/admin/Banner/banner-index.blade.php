@@ -39,22 +39,26 @@
               </thead>
               <tbody>
 
-              @foreach ($key as $value )
+              @foreach ($key as $data)
 
                 <tr>
                   <td>{{$loop->iteration}}</td>
-                  <td>{{$value->heading_1}}</td>
-                  <td>{{$value->heading_2}}</td>
-                  <td>{{$value->heading_3}}</td>
 
-                  <td><img src="{{asset($value->banner_image_1)}}" width="90px"  heigh="70px" alt="no image" /></td>
-                  <td><img src="{{asset($value->banner_image_2)}}" width="90px"  heigh="70px" alt="no image" /></td>
-                  <td><img src="{{asset($value->banner_image_3)}}" width="90px"  heigh="70px" alt="no image" /></td>
-                  <td>@if($value->status == true) <span class = "text-info" > Active </span> @else <span class = "text-danger" > Inactive </span> @endif</td>
+                  <td><img src="{{asset($data->banner_image_1)}}" width="90px"  heigh="70px" alt="no image" /></td>
+                  <td>{{$data->heading_1}}</td>
+
+                  <td><img src="{{asset($data->banner_image_2)}}" width="90px"  heigh="70px" alt="no image" /></td>
+                  <td>{{$data->heading_2}}</td>
+
+                  <td><img src="{{asset($data->banner_image_3)}}" width="90px"  heigh="70px" alt="no image" /></td>
+                  <td>{{$data->heading_3}}</td>
+
+                  <td>@if($data->status == true) <span class = "text-info" > Active </span> @else <span class = "text-danger" > Inactive </span> @endif</td>
+
                   <td>
-                    <a type="button" href="{{url('slider-edit', $value->id)}}" class="btn btn-secondary"><i class="far fa-edit"></i></a>
-                    <a type="button" href="{{url('slider-view', $value->id)}}" class="btn btn-success"><i class="far fa-eye-slash"></i></a>
-                    <a type="button" href="{{url('slider-delete', $value->id)}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                    <a type="button" href="{{url('slider-edit', $data->id)}}" class="btn btn-secondary"><i class="far fa-edit"></i></a>
+                    <a type="button" href="{{url('slider-view', $data->id)}}" class="btn btn-success"><i class="far fa-eye-slash"></i></a>
+                    <a type="button" href="{{url('slider-delete', $data->id)}}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
                 </tr>
                 </tr>
               @endforeach

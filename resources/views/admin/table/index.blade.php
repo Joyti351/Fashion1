@@ -36,7 +36,7 @@
               </thead>
               <tbody>
 
-              @foreach ($key as $value )
+              @foreach ($key as $value)
 
                 <tr>
                   <td>{{$loop->iteration}}</td>

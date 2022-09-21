@@ -46,4 +46,8 @@ class HomeController extends Controller
      public function BlogDetails(){
         return view('user.head.blog-details');
     }
+
+    public function sing_in(){
+        return view('user.head.sing-in');
+    }
 }

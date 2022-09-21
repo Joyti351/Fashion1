@@ -45,7 +45,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('slider-index')}}" class="nav-link">
+                <a href="{{url('banner-index')}}" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                     banner list

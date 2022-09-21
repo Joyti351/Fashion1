@@ -24,7 +24,7 @@ class AdminController extends Controller
             if(!file_exists(public_path('images'))){
                 mkdir(public_path('images'),0777,true);
             }
-            
+
             $image=$request->bg_image;
             $name=$image->GetClientOriginalName();
             $path=public_path('images');
@@ -35,7 +35,7 @@ class AdminController extends Controller
         }
         FashionTable::create($data);
         return redirect()->to('slider-index');
-        
+
     }
     public function index(){
         //quary
@@ -48,7 +48,7 @@ class AdminController extends Controller
         if($data){
             return view('admin.table.show',['key' => $data]);
         }
-        
+
     }
 
     public function edit($id){
@@ -67,7 +67,7 @@ class AdminController extends Controller
             if(!file_exists(public_path('images'))){
                 mkdir(public_path('images'),0777,true);
             }
-            
+
             $image=$request->bg_image;
             $name=$image->GetClientOriginalName();
             $path=public_path('images');
@@ -76,11 +76,11 @@ class AdminController extends Controller
             $image->move($path,$imagename);
             $data['bg_image']='images/'. $imagename;
 
-            
+
         }
-        
+
         return redirect()->to('slider-index');
-        
+
     }
 
     public function delete($id){
