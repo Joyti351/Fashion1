@@ -9,46 +9,46 @@
         <!-- jquery validation -->
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">data table <small>for ecommerce</small></h3>
+            <h3 class="card-title">Data_table <small>for banner_image</small></h3>
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form role="form" action=" " method="post" id="quickForm"
+          <form role="form" action="{{url('banner-store') }}" method="post" id="quickForm"
             enctype="multipart/form-data">
             @csrf
             <div class="card-body">
 
               <div class="form- roup">
                 <label for="exampleInputPassword1">banner-image-1</label>
-                <input type="file" name="banner_image" class="form-control" id="exampleInputPassword1" >
+                <input type="file" name="banner_image_1" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger">
               </div>
 
               <div class="form-group">
-                <label for="exampleInputPassword1">heading1</label>
-                <input type="text" name="heading1" class="form-control" id="exampleInputPassword1" >
+                <label for="exampleInputPassword1">heading_1</label>
+                <input type="text" name="heading_1" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger"></p>
               </div>
               <div class="form- roup">
                 <label for="exampleInputPassword1">banner-image-2</label>
-                <input type="file" name="banner_image" class="form-control" id="exampleInputPassword1" >
+                <input type="file" name="banner_image_2" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger">
               </div>
 
               <div class="form-group">
-                <label for="exampleInputPassword1">heading2</label>
-                <input type="text" name="heading1" class="form-control" id="exampleInputPassword1" >
+                <label for="exampleInputPassword1">heading_2</label>
+                <input type="text" name="heading_2" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger"></p>
               </div>
               <div class="form- roup">
                 <label for="exampleInputPassword1">banner-image-3</label>
-                <input type="file" name="banner_image" class="form-control" id="exampleInputPassword1" >
+                <input type="file" name="banner_image_3" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger">
               </div>
 
               <div class="form-group">
-                <label for="exampleInputPassword1">heading3</label>
-                <input type="text" name="heading1" class="form-control" id="exampleInputPassword1" >
+                <label for="exampleInputPassword1">heading_3</label>
+                <input type="text" name="heading_3" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger"></p>
               </div>
               <div class="form-group mb-0">

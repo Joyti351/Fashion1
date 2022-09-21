@@ -13,12 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('fashion_tables', function (Blueprint $table) {
+        Schema::create('banner_tables', function (Blueprint $table) {
             $table->id();
-            $table->string('bg_image')->nullable();
-            $table->string('heading1');
-            $table->string('heading2');
-            $table->string('description');
+            $table->string('banner_image_1');
+            $table->string('heading_1');
+            $table->string('banner_image_2');
+            $table->string('heading_2');
+            $table->string('banner_image_3');
+            $table->string('heading_3');
             $table->boolean('status');
             $table->timestamps();
         });
@@ -31,7 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fashion_tables');
-        
+        Schema::dropIfExists('banner_tables');
     }
 };

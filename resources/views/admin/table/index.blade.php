@@ -8,10 +8,10 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">data table</h3>
+            <h3 class="card-title">slider data table</h3>
             <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
-                  <a type="button" href="{{url('slider-link')}}" class="btn btn-info">Add-data</a>
+                  <a type="button" href="{{url('slider-create')}}" class="btn btn-info">Add-data</a>
                 </div>
               </div>
 

@@ -8,10 +8,10 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">data table</h3>
+            <h3 class="card-title">banner data table</h3>
             <div class="card-tools">
                 <div class="input-group input-group-sm" style="width: 150px;">
-                  <a type="button" href="{{url('slider-link')}}" class="btn btn-info">Add-data</a>
+                  <a type="button" href="{{url('banner-create')}}" class="btn btn-info">Add-data</a>
                 </div>
               </div>
 
@@ -26,11 +26,11 @@
                 <tr>
                   <th>id</th>
                   <th>Banner_image_1</th>
-                  <th>heading1</th>
+                  <th>heading_1</th>
                   <th>Banner_image_2</th>
-                  <th>heading2</th>
+                  <th>heading_2</th>
                   <th>Banner_image_3</th>
-                  <th>heading3</th>
+                  <th>heading_3</th>
 
                   <th>status</th>
 
@@ -43,13 +43,13 @@
 
                 <tr>
                   <td>{{$loop->iteration}}</td>
-                  <td>{{$value->heading1}}</td>
-                  <td>{{$value->heading2}}</td>
-                  <td>{{$value->heading3}}</td>
+                  <td>{{$value->heading_1}}</td>
+                  <td>{{$value->heading_2}}</td>
+                  <td>{{$value->heading_3}}</td>
 
                   <td><img src="{{asset($value->banner_image_1)}}" width="90px"  heigh="70px" alt="no image" /></td>
-                  <td><img src="{{asset($value->bg_image_2)}}" width="90px"  heigh="70px" alt="no image" /></td>
-                  <td><img src="{{asset($value->bg_image_3)}}" width="90px"  heigh="70px" alt="no image" /></td>
+                  <td><img src="{{asset($value->banner_image_2)}}" width="90px"  heigh="70px" alt="no image" /></td>
+                  <td><img src="{{asset($value->banner_image_3)}}" width="90px"  heigh="70px" alt="no image" /></td>
                   <td>@if($value->status == true) <span class = "text-info" > Active </span> @else <span class = "text-danger" > Inactive </span> @endif</td>
                   <td>
                     <a type="button" href="{{url('slider-edit', $value->id)}}" class="btn btn-secondary"><i class="far fa-edit"></i></a>

@@ -34,15 +34,16 @@ Route::get('/blog-details.html',[HomeController::class,'BlogDetails']);
 
 //adminsite
 Route::get('/admin',[AdminController::class,'home']);
-Route::get('/slider-link',[AdminController::class,'create']);
-Route::post('/slider-store',[AdminController::class,'store']);
 Route::get('/slider-index',[AdminController::class,'index']);
+Route::get('/slider-create',[AdminController::class,'create']);
+Route::post('/slider-store',[AdminController::class,'store']);
 Route::get('/slider-view/{id}',[AdminController::class,'view']);
 Route::get('/slider-edit/{id}',[AdminController::class,'edit']);
 Route::post('/slider-update',[AdminController::class,'update']);
 Route::get('/slider-delete/{id}',[AdminController::class,'delete']);
 
 //BannerSite
-Route::get('/banner-link',[BannerController::class,'BannerForm']);
+Route::get('/banner-create',[BannerController::class,'BannerForm']);
 Route::get('/banner-index',[BannerController::class,'BannerIndex']);
+Route::post('/banner-store',[BannerController::class,'BannerStore']);
 
