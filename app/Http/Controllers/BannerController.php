@@ -13,20 +13,20 @@ class BannerController extends Controller
 
 
 
-    public function BannerStore(Request $banner){
+    public function BannerStore(Request $request){
     //dd($banner->all());
 
-    $data['heading_1'] = $banner->heading_1;
-    $data['heading_2'] = $banner->heading_2;
-    $data['heading_3'] = $banner->heading_3;
-    $data['status'] = $banner->status=='on' ? true : false;
+    $data['heading_1'] = $request->heading_1;
+    $data['heading_2'] = $request->heading_2;
+    $data['heading_3'] = $request->heading_3;
+    $data['status'] = $request->status=='on' ? true : false;
 
-    if($banner->banner_image_1){
+    if($request->banner_image_1){
         if(!file_exists(public_path('banner_img'))){
             mkdir(public_path('banner_img'),0777,true);
         }
 
-        $image=$banner->banner_image_1;
+        $image=$request->banner_image_1;
         $name=$image->GetClientOriginalName();
         $path=public_path('banner_img');
         $imagename=time().'_'.$name;
@@ -34,12 +34,12 @@ class BannerController extends Controller
         $image->move($path,$imagename);
         $data['banner_image_1']='banner_img/'. $imagename;
     }
-    if($banner->banner_image_2){
+    if($request->banner_image_2){
         if(!file_exists(public_path('banner_img'))){
             mkdir(public_path('banner_img'),0777,true);
         }
 
-        $image=$banner->banner_image_2;
+        $image=$request->banner_image_2;
         $name=$image->GetClientOriginalName();
         $path=public_path('banner_img');
         $imagename=time().'_'.$name;
@@ -47,12 +47,12 @@ class BannerController extends Controller
         $image->move($path,$imagename);
         $data['banner_image_2']='banner_img/'. $imagename;
     }
-    if($banner->banner_image_3){
+    if($request->banner_image_3){
         if(!file_exists(public_path('banner_img'))){
             mkdir(public_path('banner_img'),0777,true);
         }
 
-        $image=$banner->banner_image_3;
+        $image=$request->banner_image_3;
         $name=$image->GetClientOriginalName();
         $path=public_path('banner_img');
         $imagename=time().'_'.$name;
@@ -63,16 +63,17 @@ class BannerController extends Controller
 
 
     BannerTable::create($data);
+    return redirect()->to('banner-index');
 
-}
-public function BannerIndex(){
+    }
+    public function BannerIndex(){
 
-    $data=BannerTable::all();
-    dd($data->all());
+        $data=BannerTable::all();
+        //dd($data->all());
 
-    //return view('admin.banner.banner-index');
-    //,['key'=>$data]
-}
+     return view('admin.banner.banner-index',['key'=>$data]);
+
+    }
 
 
 }

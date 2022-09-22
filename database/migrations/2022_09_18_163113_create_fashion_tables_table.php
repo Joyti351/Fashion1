@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('fashion_tables', function (Blueprint $table) {
             $table->id();
             $table->string('bg_image')->nullable();
-            $table->string('heading1');
+            $table->string('heading1')->nullable();
             $table->string('heading2');
             $table->string('description');
             $table->boolean('status');
@@ -32,6 +32,6 @@ return new class extends Migration
     public function down()
     {
         Schema::dropIfExists('fashion_tables');
-        
+
     }
 };

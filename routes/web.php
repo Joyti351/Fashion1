@@ -46,6 +46,6 @@ Route::get('/slider-delete/{id}',[AdminController::class,'delete']);
 //BannerSite
 Route::get('/banner-create',[BannerController::class,'BannerForm']);
 Route::post('/banner-store',[BannerController::class,'BannerStore']);
-Route::post('/banner-index',[BannerController::class,'BannerIndex']);
+Route::get('/banner-index',[BannerController::class,'BannerIndex']);
 
 

@@ -9,11 +9,11 @@
         <!-- jquery validation -->
         <div class="card card-primary">
           <div class="card-header">
-            <h3 class="card-title">Data_table <small>for banner_image</small></h3>
+            <h3 class="card-title">Data_table<small>for banner_image</small></h3>
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form role="form" action="{{url('banner-index') }}" method="post" id="quickForm"
+          <form role="form" action="{{url('banner-store') }}" method="post" id="quickForm"
             enctype="multipart/form-data">
             @csrf
             <div class="card-body">
