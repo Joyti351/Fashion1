@@ -16,8 +16,8 @@ class HomeController extends Controller
     }
 
     public function banner(){
-        $data = BannerTable::all();
-        return view('user.banner',compact('data'));
+        $data['sliders'] = BannerTable::where('status',true)->get();
+        return view('user.banner',['data'=>$data]);
 
     }
 

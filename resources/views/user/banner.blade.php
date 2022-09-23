@@ -1,6 +1,9 @@
 <section class="banner spad">
+    @foreach ($data['sliders'] as $slider)
+
+    @endforeach
     <div class="container">
-        
+
 
 
         <div class="row">
@@ -8,10 +11,10 @@
 
                 <div class="banner__item">
                     <div class="banner__item__pic">
-                        <img src="{{asset('fashion/img/banner/banner-1.jpg')}}" alt="">
+                        <img src="{{asset($slider->bg_image)}}" alt="">
                     </div>
                     <div class="banner__item__text">
-                        <h2>Clothing Collections 2030</h2>
+                        <h2>{{ $slider->heading1 }}</h2>
                         <a href="#">Shop now</a>
                     </div>
                 </div>

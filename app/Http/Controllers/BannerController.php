@@ -88,6 +88,60 @@ class BannerController extends Controller
         return view('admin.Banner.banner-edit',['key' => $data]);
     }
 
+    public function BannerUpdate(Request $request){
+        $data['heading_1'] = $request->heading_1;
+    $data['heading_2'] = $request->heading_2;
+    $data['heading_3'] = $request->heading_3;
+    $data['status'] = $request->status=='on' ? true : false;
+
+    if($request->banner_image_1){
+        if(!file_exists(public_path('banner_img'))){
+            mkdir(public_path('banner_img'),0777,true);
+        }
+
+        $image=$request->banner_image_1;
+        $name=$image->GetClientOriginalName();
+        $path=public_path('banner_img');
+        $imagename=time().'_'.$name;
+
+        $image->move($path,$imagename);
+        $data['banner_image_1']='banner_img/'. $imagename;
+    }
+    if($request->banner_image_2){
+        if(!file_exists(public_path('banner_img'))){
+            mkdir(public_path('banner_img'),0777,true);
+        }
+
+        $image=$request->banner_image_2;
+        $name=$image->GetClientOriginalName();
+        $path=public_path('banner_img');
+        $imagename=time().'_'.$name;
+
+        $image->move($path,$imagename);
+        $data['banner_image_2']='banner_img/'. $imagename;
+    }
+    if($request->banner_image_3){
+        if(!file_exists(public_path('banner_img'))){
+            mkdir(public_path('banner_img'),0777,true);
+        }
+
+        $image=$request->banner_image_3;
+        $name=$image->GetClientOriginalName();
+        $path=public_path('banner_img');
+        $imagename=time().'_'.$name;
+
+        $image->move($path,$imagename);
+        $data['banner_image_3']='banner_img/'. $imagename;
+    }
+    $slider = BannerTable::where('id',$request->id)->first();
+        if($slider){
+            $slider->update($data);
+        }
+
+        return redirect()->to('banner-index');
+
+    }
+
     public function BannerDelete($id){
         $data=BannerTable::where(['id' => $id])->first();
         if($data){

@@ -52,5 +52,6 @@ Route::get('/banner-index',[BannerController::class,'BannerIndex']);
 Route::get('/bannerr-view/{id}',[BannerController::class,'BannerView']);
 Route::get('/banner-edit/{id}',[BannerController::class,'BannerEdit']);
 Route::get('/banner-delete/{id}',[BannerController::class,'BannerDelete']);
+Route::post('/banner-update',[BannerController::class,'BannerUpdate']);
 
 

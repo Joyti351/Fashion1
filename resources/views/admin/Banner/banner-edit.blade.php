@@ -13,7 +13,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form role="form" action="{{ url('banner-udate') }}" method="post" id="quickForm" enctype="multipart/form-data">
+            <form role="form" action="{{ url('banner-update') }}" method="post" id="quickForm" enctype="multipart/form-data">
                 @csrf
               <div class="card-body">
 
