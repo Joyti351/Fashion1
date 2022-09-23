@@ -19,6 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/user',[HomeController::class,'home']);
+Route::get('/banner',[HomeController::class,'banner']);
+
 Route::get('/index.html',[HomeController::class,'index']);
 Route::get('/shop.html',[HomeController::class,'shop']);
 Route::get('/blog.html',[HomeController::class,'blog']);
@@ -47,5 +49,8 @@ Route::get('/slider-delete/{id}',[AdminController::class,'delete']);
 Route::get('/banner-create',[BannerController::class,'BannerForm']);
 Route::post('/banner-store',[BannerController::class,'BannerStore']);
 Route::get('/banner-index',[BannerController::class,'BannerIndex']);
+Route::get('/bannerr-view/{id}',[BannerController::class,'BannerView']);
+Route::get('/banner-edit/{id}',[BannerController::class,'BannerEdit']);
+Route::get('/banner-delete/{id}',[BannerController::class,'BannerDelete']);
 
 

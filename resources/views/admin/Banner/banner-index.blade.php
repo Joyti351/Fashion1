@@ -56,9 +56,9 @@
                   <td>@if($data->status == true) <span class = "text-info" > Active </span> @else <span class = "text-danger" > Inactive </span> @endif</td>
 
                   <td>
-                    <a type="button" href="" class="btn btn-secondary"><i class="far fa-edit"></i></a>
-                    <a type="button" href="" class="btn btn-success"><i class="far fa-eye-slash"></i></a>
-                    <a type="button" href="" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                    <a type="button" href="{{ url('banner-edit',$data->id) }}" class="btn btn-secondary"><i class="far fa-edit"></i></a>
+                    <a type="button" href="{{ url('banner-view',$data->id) }}" class="btn btn-success"><i class="far fa-eye-slash"></i></a>
+                    <a type="button" href="{{ url('banner-delete',$data->id) }}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
                 </tr>
                 </tr>
               @endforeach

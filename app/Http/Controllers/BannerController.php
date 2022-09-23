@@ -75,5 +75,26 @@ class BannerController extends Controller
 
     }
 
+    public function BannerView($id){
+        $data=BannerTable::where(['id'=>$id])->first();
+        if($data){
+            return view('admin.banner.banner-view',['key' => $data]);
+        }
+
+    }
+
+    public function BannerEdit($id){
+        $data=BannerTable::where(['id'=>$id])->first();
+        return view('admin.Banner.banner-edit',['key' => $data]);
+    }
+
+    public function BannerDelete($id){
+        $data=BannerTable::where(['id' => $id])->first();
+        if($data){
+            $data->delete();
+        }
+        return redirect()->back();
+    }
+
 
 }

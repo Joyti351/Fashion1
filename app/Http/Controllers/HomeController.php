@@ -4,13 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\FashionTable;
+use App\Models\BannerTable;
 
 class HomeController extends Controller
 {
     public function home(){
         $data['sliders'] = FashionTable::where('status',true)->get();
         return view('user.master',['data'=>$data]);
+
+
     }
+
+    public function banner(){
+        $data = BannerTable::all();
+        return view('user.banner',compact('data'));
+
+    }
+
     public function contact(){
         return view('user.head.contact');
     }
