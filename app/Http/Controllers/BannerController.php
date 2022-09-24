@@ -71,14 +71,14 @@ class BannerController extends Controller
         $data=BannerTable::all();
         //dd($data->all());
 
-     return view('admin.banner.banner-index',['key'=>$data]);
+     return view('admin.Banner.banner-index',['key'=>$data]);
 
     }
 
     public function BannerView($id){
         $data=BannerTable::where(['id'=>$id])->first();
         if($data){
-            return view('admin.banner.banner-view',['key' => $data]);
+            return view('admin.Banner.banner-view',['key' => $data]);
         }
 
     }

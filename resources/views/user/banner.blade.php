@@ -1,8 +1,12 @@
 <section class="banner spad">
-    @foreach ($data['sliders'] as $slider)
 
-    @endforeach
+
+
     <div class="container">
+
+
+
+@foreach ($banners as $banner)
 
 
 
@@ -11,10 +15,10 @@
 
                 <div class="banner__item">
                     <div class="banner__item__pic">
-                        <img src="{{asset($slider->bg_image)}}" alt="">
+                        <img src="{{asset($banner->banner_image_1)}}" alt="">
                     </div>
                     <div class="banner__item__text">
-                        <h2>{{ $slider->heading1 }}</h2>
+                        <h2>$banner->heading_1</h2>
                         <a href="#">Shop now</a>
                     </div>
                 </div>
@@ -22,10 +26,10 @@
             <div class="col-lg-5">
                 <div class="banner__item banner__item--middle">
                     <div class="banner__item__pic">
-                        <img src="{{asset('fashion/img/banner/banner-2.jpg')}}" alt="">
+                        <img src="{{asset($banner->banner_image_2)}}" alt="">
                     </div>
                     <div class="banner__item__text">
-                        <h2>Accessories</h2>
+                        <h2>$banner->heading_2</h2>
                         <a href="#">Shop now</a>
                     </div>
                 </div>
@@ -33,15 +37,15 @@
             <div class="col-lg-7">
                 <div class="banner__item banner__item--last">
                     <div class="banner__item__pic">
-                        <img src="{{asset('fashion/img/banner/banner-3.jpg')}}" alt="">
+                        <img src="{{asset($banner->banner_image_3)}}" alt="">
                     </div>
                     <div class="banner__item__text">
-                        <h2>Shoes Spring 2030</h2>
+                        <h2>$banner->heading_3</h2>
                         <a href="#">Shop now</a>
                     </div>
                 </div>
             </div>
         </div>
-
+        @endforeach
     </div>
 </section>
