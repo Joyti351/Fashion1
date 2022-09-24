@@ -9,20 +9,20 @@
           <!-- jquery validation -->
           <div class="card card-primary">
             <div class="card-header">
-              <h3 class="card-title">Banner <small>Edit</small></h3>
+              <h3 class="card-title">Trend <small>Edit</small></h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form role="form" action="{{ url('banner-update') }}" method="post" id="quickForm" enctype="multipart/form-data">
+            <form role="form" action="{{ url('trend-update') }} " method="post" id="quickForm" enctype="multipart/form-data">
                 @csrf
               <div class="card-body">
 
 
 
                 <div class="form-group">
-                    <label for="exampleInputPassword1">banner_image_1</label>
-                    <input type="file" name="banner_image_1" class="form-control" id="exampleInputPassword1" >
-                    <img src="{{asset($key->banner_image_1)}}" width="110px" height="80px" alt="no image"/>
+                    <label for="exampleInputPassword1">image_1</label>
+                    <input type="file" name="image_1" class="form-control" id="exampleInputPassword1" >
+                    <img src="{{asset($key->image_1)}}" width="110px" height="80px" alt="no image"/>
                     <p class="text-danger"></p>
                   </div>
                 <div class="form-group">
@@ -31,9 +31,9 @@
                   <p class="text-danger"> </p>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">banner_image_2</label>
-                    <input type="file" name="banner_image_2" class="form-control" id="exampleInputPassword1" >
-                    <img src="{{asset($key->banner_image_2)}}" width="110px" height="80px" alt="no image"/>
+                    <label for="exampleInputPassword1">image_2</label>
+                    <input type="file" name="image_2" class="form-control" id="exampleInputPassword1" >
+                    <img src="{{asset($key->image_2)}}" width="110px" height="80px" alt="no image"/>
                     <p class="text-danger"></p>
                   </div>
                 <div class="form-group">
@@ -42,9 +42,9 @@
                     <p class="text-danger"> </p>
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">banner_image_3</label>
-                    <input type="file" name="banner_image_3" class="form-control" id="exampleInputPassword1" >
-                    <img src="{{asset($key->banner_image_3)}}" width="110px" height="80px" alt="no image"/>
+                    <label for="exampleInputPassword1">image_3</label>
+                    <input type="file" name="image_3" class="form-control" id="exampleInputPassword1" >
+                    <img src="{{asset($key->image_3)}}" width="110px" height="80px" alt="no image"/>
 
 
 

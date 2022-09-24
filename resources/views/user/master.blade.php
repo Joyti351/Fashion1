@@ -100,36 +100,40 @@
             </div>
         </div>
         <div class="row">
+            @foreach ($data['trends'] as $trend)
+
+
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog__item">
-                    <div class="blog__item__pic set-bg" data-setbg="{{asset('fashion/img/blog/blog-1.jpg')}}"></div>
+                    <div class="blog__item__pic set-bg" data-setbg="{{asset($trend->image_1)}}"></div>
                     <div class="blog__item__text">
                         <span><img src="{{asset('fashion/img/icon/calendar.png')}}" alt=""> 16 February 2020</span>
-                        <h5>What Curling Irons Are The Best Ones</h5>
+                        <h5>{{ $trend->heading_1 }}</h5>
                         <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog__item">
-                    <div class="blog__item__pic set-bg" data-setbg="{{asset('fashion/img/blog/blog-2.jpg')}}"></div>
+                    <div class="blog__item__pic set-bg" data-setbg="{{asset($trend->image_2)}}"></div>
                     <div class="blog__item__text">
                         <span><img src="{{asset('fashion/img/icon/calendar.png')}}" alt=""> 21 February 2020</span>
-                        <h5>Eternity Bands Do Last Forever</h5>
+                        <h5>{{ $trend->heading_2 }}</h5>
                         <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="blog__item">
-                    <div class="blog__item__pic set-bg" data-setbg="{{asset('fashion/img/blog/blog-3.jpg')}}"></div>
+                    <div class="blog__item__pic set-bg" data-setbg="{{asset($trend->image_3)}}"></div>
                     <div class="blog__item__text">
                         <span><img src="{{asset('fashion/img/icon/calendar.png')}}" alt=""> 28 February 2020</span>
-                        <h5>The Health Benefits Of Sunglasses</h5>
+                        <h5>{{ $trend->heading_3}}</h5>
                         <a href="#">Read More</a>
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </section>

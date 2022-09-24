@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\http\controllers\HomeController;
 use App\http\controllers\AdminController;
 use App\http\controllers\BannerController;
+use App\http\controllers\TrendController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,5 +54,15 @@ Route::get('/banner-view/{id}',[BannerController::class,'BannerView']);
 Route::get('/banner-edit/{id}',[BannerController::class,'BannerEdit']);
 Route::get('/banner-delete/{id}',[BannerController::class,'BannerDelete']);
 Route::post('/banner-update',[BannerController::class,'BannerUpdate']);
+
+//trends site
+Route::get('/trend-create',[TrendController::class,'TrendForm']);
+Route::post('/trend-store',[TrendController::class,'TrendStore']);
+Route::get('/trend-index',[TrendController::class,'TrendIndex']);
+Route::get('/trend-view/{id}',[TrendController::class,'TrendView']);
+Route::get('/trend-edit/{id}',[TrendController::class,'TrendEdit']);
+Route::get('/trend-delete/{id}',[TrendController::class,'TrendDelete']);
+Route::post('/trend-update',[TrendController::class,'TrendUpdate']);
+
 
 

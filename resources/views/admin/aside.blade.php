@@ -54,10 +54,10 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('slider-index')}}" class="nav-link">
+                <a href="{{url('trend-index')}}" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
-                    Silder list
+                    trends list
                     <span class="right badge badge-danger">click here</span>
                   </p>
                 </a>

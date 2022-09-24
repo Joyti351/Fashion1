@@ -5,12 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\FashionTable;
 use App\Models\BannerTable;
+use App\Models\TrendTable;
 
 class HomeController extends Controller
 {
     public function home(){
         $data['sliders'] = FashionTable::where('status',true)->get();
         $data['banners'] = BannerTable::where('status',true)->get();
+        $data['trends'] = TrendTable::where('status',true)->get();
         return view('user.master',['data'=>$data]);
     }
 
@@ -22,15 +24,15 @@ class HomeController extends Controller
 
 
     public function contact(){
-        return view('user.head.contact');
+        return view('user.head.contact.contact');
     }
 
     public function blog(){
-        return view('user.head.blog');
+        return view('user.head.blog.blog');
     }
 
     public function shop(){
-        return view('user.head.shop');
+        return view('user.head.shop.shop');
     }
 
      public function index(){
@@ -38,23 +40,23 @@ class HomeController extends Controller
     }
 
     public function about(){
-        return view('user.head.about');
+        return view('user.head.about.about');
      }
 
      public function ShopDetails(){
-        return view('user.head.shop-details');
+        return view('user.head.shop-details.shop-details');
      }
 
      public function ShoppingCart(){
-        return view('user.head.shopping-cart');
+        return view('user.head.shopping-cart.shopping-cart');
      }
 
      public function checkout(){
-        return view('user.head.checkout');
+        return view('user.head.checkout.checkout');
      }
 
      public function BlogDetails(){
-        return view('user.head.blog-details');
+        return view('user.head.blog-details.blog-details');
     }
 
     public function sing_in(){
