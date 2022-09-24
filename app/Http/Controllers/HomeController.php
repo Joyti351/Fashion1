@@ -10,15 +10,14 @@ class HomeController extends Controller
 {
     public function home(){
         $data['sliders'] = FashionTable::where('status',true)->get();
+        $data['banners'] = BannerTable::where('status',true)->get();
         return view('user.master',['data'=>$data]);
     }
 
-    public function banner(){
-        $banners = BannerTable::where('status',true)->get();
-        return view('user.banner',['data'=>$banners]);
 
 
-}
+
+
 
 
 
