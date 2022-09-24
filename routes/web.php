@@ -5,6 +5,7 @@ use App\http\controllers\HomeController;
 use App\http\controllers\AdminController;
 use App\http\controllers\BannerController;
 use App\http\controllers\TrendController;
+use App\http\controllers\ShopController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,6 +64,9 @@ Route::get('/trend-view/{id}',[TrendController::class,'TrendView']);
 Route::get('/trend-edit/{id}',[TrendController::class,'TrendEdit']);
 Route::get('/trend-delete/{id}',[TrendController::class,'TrendDelete']);
 Route::post('/trend-update',[TrendController::class,'TrendUpdate']);
+
+//shoping site
+Route::get('/shop-create',[ShopController::class,'ShopForm']);
 
 
 

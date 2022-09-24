@@ -62,6 +62,24 @@
                   </p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{url('shop-create')}}" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Shop list
+                    <span class="right badge badge-danger">click here</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('trend-index')}}" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    trends list
+                    <span class="right badge badge-danger">click here</span>
+                  </p>
+                </a>
+              </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
