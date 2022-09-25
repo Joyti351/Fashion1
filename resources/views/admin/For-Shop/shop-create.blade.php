@@ -13,7 +13,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form role="form" action="" method="post" id="quickForm"
+          <form role="form" action="{{ url('shop-store') }}" method="post" id="quickForm"
             enctype="multipart/form-data">
             @csrf
             <div class="card-body">
@@ -29,6 +29,11 @@
                 <input type="text" name="heading_1" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger"></p>
               </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">blance_1</label>
+                <input type="text" name="blance_1" class="form-control" id="exampleInputPassword1" >
+                <p class="text-danger"></p>
+              </div>
               <div class="form- roup">
                 <label for="exampleInputPassword1">image_2</label>
                 <input type="file" name="image_2" class="form-control" id="exampleInputPassword1" >
@@ -40,6 +45,11 @@
                 <input type="text" name="heading_2" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger"></p>
               </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">blance_2</label>
+                <input type="text" name="blance_2" class="form-control" id="exampleInputPassword1" >
+                <p class="text-danger"></p>
+              </div>
               <div class="form- roup">
                 <label for="exampleInputPassword1">image_3</label>
                 <input type="file" name="image_3" class="form-control" id="exampleInputPassword1" >
@@ -49,6 +59,11 @@
               <div class="form-group">
                 <label for="exampleInputPassword1">heading_3</label>
                 <input type="text" name="heading_3" class="form-control" id="exampleInputPassword1" >
+                <p class="text-danger"></p>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">blance_3</label>
+                <input type="text" name="blance_3" class="form-control" id="exampleInputPassword1" >
                 <p class="text-danger"></p>
               </div>
               <div class="form-group mb-0">

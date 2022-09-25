@@ -9,7 +9,7 @@
           <!-- jquery validation -->
           <div class="card card-primary">
             <div class="card-header">
-              <h3 class="card-title">Trend <small>View</small></h3>
+              <h3 class="card-title">shop <small>view</small></h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
@@ -28,35 +28,50 @@
                   <p class="text-danger"> </p>
                 </div>
                 <div class="form-group">
+                    <label for="exampleInputEmail1">blance_1</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->blance_1}}"/>
+                    <p class="text-danger"> </p>
+                </div>
+                <div class="form-group">
                     <label for="exampleInputPassword1">image_2</label>
                     <input type="file" name="image" class="form-control" id="exampleInputPassword1" >
                     <img src="{{asset($key->image_2)}}" width="110px" height="80px" alt="no image"/>
                     <p class="text-danger"></p>
-                  </div>
+                </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">heading_2</label>
                     <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->heading_2}}"/>
                     <p class="text-danger"> </p>
-                  </div>
-                  <div class="form-group">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">blance_2</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->blance_2}}"/>
+                    <p class="text-danger"> </p>
+                </div>
+                <div class="form-group">
                     <label for="exampleInputPassword1">image_3</label>
                     <input type="file" name="image" class="form-control" id="exampleInputPassword1" >
                     <img src="{{asset($key->image_3)}}" width="110px" height="80px" alt="no image"/>
                     <p class="text-danger"></p>
-                  </div>
-                  <div class="form-group">
+                </div>
+                <div class="form-group">
                     <label for="exampleInputEmail1">heading_3</label>
                     <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->heading_3}}"/>
                     <p class="text-danger"> </p>
-                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">blance_3</label>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" value="{{$key->blance_3}}"/>
+                    <p class="text-danger"> </p>
+                </div>
 
 
 
                 <div class="form-group mb-0">
-                  <div class="custom-control custom-checkbox">
+                    <div class="custom-control custom-checkbox">
                     <input type="checkbox" name="status" class="custom-control-input" {{$key->status==true ? 'checked' : ''}} />
                     <label class="custom-control-label" for="exampleCheck1">Active </label>
-                  </div>
+                    </div>
                 </div>
               </div>
               <input type="show" name="id" value="{{ $key->id }}"/>

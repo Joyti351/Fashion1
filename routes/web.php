@@ -67,6 +67,12 @@ Route::post('/trend-update',[TrendController::class,'TrendUpdate']);
 
 //shoping site
 Route::get('/shop-create',[ShopController::class,'ShopForm']);
+Route::post('/shop-store',[ShopController::class,'ShopStore']);
+Route::get('/shop-index',[ShopController::class,'ShopIndex']);
+Route::get('/shop-view/{id}',[ShopController::class,'ShopView']);
+Route::get('/shop-edit/{id}',[ShopController::class,'ShopEdit']);
+Route::get('/shop-delete/{id}',[ShopController::class,'ShopDelete']);
+Route::post('/shop-update',[ShopController::class,'ShopUpdate']);
 
 
 

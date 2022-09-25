@@ -66,7 +66,7 @@
         <div class="container">
             <div class="row">
                 @include('user.head.shop.siteber')
-                @include('user.head.shop.master')
+                @yield('content')
             </div>
         </div>
     </section>

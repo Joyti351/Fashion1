@@ -63,7 +63,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('shop-create')}}" class="nav-link">
+                <a href="{{url('shop-index')}}" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
                     Shop list

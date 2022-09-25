@@ -32,7 +32,7 @@ class HomeController extends Controller
     }
 
     public function shop(){
-        return view('user.head.shop.shop');
+        return view('user.head.shop.master');
     }
 
      public function index(){

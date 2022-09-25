@@ -1,3 +1,5 @@
+@extends('user.head.shop.shop')
+@section('content')
 <div class="col-lg-9">
     <div class="shop__product__option">
         <div class="row">
@@ -456,3 +458,4 @@
         </div>
     </div>
 </div>
+@endsection
