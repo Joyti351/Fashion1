@@ -13,17 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('shop_tables', function (Blueprint $table) {
+        Schema::create('blog_tables', function (Blueprint $table) {
             $table->id();
+            $table->string('bg_image')->nullable();
+            $table->string('heading')->nullable();
             $table->string('image_1');
             $table->string('heading_1');
-            $table->float('blance_1');
+            $table->string('date_1');
             $table->string('image_2');
             $table->string('heading_2');
-            $table->float('blance_2');
+            $table->string('date_2');
             $table->string('image_3');
             $table->string('heading_3');
-            $table->sfloat('blance_3');
+            $table->string('date_3');
             $table->boolean('status');
             $table->timestamps();
         });
@@ -36,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shop_tables');
+        Schema::dropIfExists('blog_tables');
     }
 };

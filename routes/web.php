@@ -6,6 +6,8 @@ use App\http\controllers\AdminController;
 use App\http\controllers\BannerController;
 use App\http\controllers\TrendController;
 use App\http\controllers\ShopController;
+use App\http\controllers\BlogController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,8 +26,8 @@ Route::get('/user',[HomeController::class,'home']);
 Route::get('/banner',[HomeController::class,'banner']);
 
 Route::get('/index.html',[HomeController::class,'index']);
-Route::get('/shop.html',[HomeController::class,'shop']);
-Route::get('/blog.html',[HomeController::class,'blog']);
+Route::get('/shop.html',[ShopController::class,'shop']);
+Route::get('/blog.html',[BlogController::class,'blog']);
 Route::get('/contact.html',[HomeController::class,'contact']);
 Route::get('/sing-in',[HomeController::class,'sing_in']);
 //usersite.page
@@ -74,5 +76,7 @@ Route::get('/shop-edit/{id}',[ShopController::class,'ShopEdit']);
 Route::get('/shop-delete/{id}',[ShopController::class,'ShopDelete']);
 Route::post('/shop-update',[ShopController::class,'ShopUpdate']);
 
-
+//Blog site
+Route::get('/blog-create',[BlogController::class,'BlogForm']);
+Route::post('/blog-store',[BlogController::class,'BlogStore']);
 

@@ -28,15 +28,9 @@ class HomeController extends Controller
         return view('user.head.contact.contact');
     }
 
-    public function blog(){
-        return view('user.head.blog.blog');
-    }
 
-    public function shop(){
-        $data['shops'] = ShopTable::where('status',true)->get();
-        return view('user.head.shop.master',['data'=>$data]);
-        //return view('user.head.shop.master');
-    }
+
+    
 
      public function index(){
        return view('user.head.index');

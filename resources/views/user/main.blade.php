@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-@include('user.head');
+@include('user.head')
 
 <body>
     <!-- Page Preloder -->
@@ -40,11 +40,12 @@
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-    @include('user.header');
+    @include('user.header')
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    @yield('content');
+    @yield('content')
+    @include('user.footer')
     <!-- Footer Section End -->
 
     <!-- Search Begin -->

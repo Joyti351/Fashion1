@@ -1,0 +1,10 @@
+    <script src="{{asset('fashion/js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{asset('fashion/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('fashion/js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{asset('fashion/js/jquery.nicescroll.min.js')}}"></script>
+    <script src="{{asset('fashion/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('fashion/js/jquery.countdown.min.js')}}"></script>
+    <script src="{{asset('fashion/js/jquery.slicknav.js')}}"></script>
+    <script src="{{asset('fashion/js/mixitup.min.js')}}"></script>
+    <script src="{{asset('fashion/js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('fashion/js/main.js')}}"></script>

@@ -7,6 +7,12 @@ use App\Models\ShopTable;
 
 class ShopController extends Controller
 {
+    public function shop(){
+        $data['shops'] = ShopTable::where('status',true)->get();
+        return view('user.head.shop.master',['data'=>$data]);
+        //return view('user.head.shop.master');
+    }
+
     public function ShopForm(){
         return view('admin.For-shop.shop-create');
     }
