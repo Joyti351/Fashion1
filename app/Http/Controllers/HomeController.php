@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\FashionTable;
 use App\Models\BannerTable;
 use App\Models\TrendTable;
+use App\Models\ShopTable;
 
 class HomeController extends Controller
 {
@@ -32,7 +33,9 @@ class HomeController extends Controller
     }
 
     public function shop(){
-        return view('user.head.shop.master');
+        $data['shops'] = ShopTable::where('status',true)->get();
+        return view('user.head.shop.master',['data'=>$data]);
+        //return view('user.head.shop.master');
     }
 
      public function index(){
