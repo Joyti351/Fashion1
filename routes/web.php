@@ -19,9 +19,7 @@ use App\http\controllers\BlogController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 Route::get('/user',[HomeController::class,'home']);
 Route::get('/banner',[HomeController::class,'banner']);
 
@@ -79,4 +77,8 @@ Route::post('/shop-update',[ShopController::class,'ShopUpdate']);
 //Blog site
 Route::get('/blog-create',[BlogController::class,'BlogForm']);
 Route::post('/blog-store',[BlogController::class,'BlogStore']);
-
+Route::get('/blog-index',[BlogController::class,'BlogIndex']);
+Route::get('/blog-view/{id}',[BlogController::class,'BlogView']);
+Route::get('/blog-edit/{id}',[BlogController::class,'BlogEdit']);
+Route::get('/blog-delete/{id}',[BlogController::class,'BlogDelete']);
+Route::post('/blog-update',[BlogController::class,'BlogUpdate']);

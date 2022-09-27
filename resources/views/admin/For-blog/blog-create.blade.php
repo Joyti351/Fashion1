@@ -24,8 +24,8 @@
                     <p class="text-danger">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">heading_1</label>
-                    <input type="text" name="heading_1" class="form-control" id="exampleInputPassword1" >
+                    <label for="exampleInputPassword1">heading</label>
+                    <input type="text" name="heading" class="form-control" id="exampleInputPassword1" >
                     <p class="text-danger"></p>
                 </div>
                 <div class="form- roup">

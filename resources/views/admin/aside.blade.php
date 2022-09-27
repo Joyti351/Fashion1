@@ -72,6 +72,15 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a href="{{url('blog-index')}}" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    blog list
+                    <span class="right badge badge-danger">click here</span>
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a href="{{url('trend-index')}}" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>
