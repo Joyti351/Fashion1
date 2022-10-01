@@ -43,7 +43,7 @@
                     <div class="blog__item__pic set-bg" data-setbg="{{asset($blog->image_3)}}"></div>
                     <div class="blog__item__text">
                         <span><img src="{{asset('fashion/img/icon/calendar.png')}}" alt="">{{ $blog->date_3 }}</span>
-                        <h5>{[$blog->heading_3]}</h5>
+                        <h5>{{ $blog->heading_3 }}</h5>
                         <a href="#">Read More</a>
                     </div>
                 </div>

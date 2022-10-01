@@ -10,6 +10,9 @@ use App\Models\ShopTable;
 
 class HomeController extends Controller
 {
+    public function welcome(){
+        return view('welcome');
+    }
     public function home(){
         $data['sliders'] = FashionTable::where('status',true)->get();
         $data['banners'] = BannerTable::where('status',true)->get();
@@ -30,7 +33,7 @@ class HomeController extends Controller
 
 
 
-    
+
 
      public function index(){
        return view('user.head.index');

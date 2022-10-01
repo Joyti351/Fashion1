@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('shop_tables', function (Blueprint $table) {
+        Schema::create('men_tables', function (Blueprint $table) {
             $table->id();
             $table->string('image_1');
             $table->string('heading_1');
@@ -25,7 +25,6 @@ return new class extends Migration
             $table->string('heading_3');
             $table->float('blance_3');
             $table->boolean('status');
-
             $table->timestamps();
         });
     }
@@ -37,6 +36,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shop_tables');
+        Schema::dropIfExists('men_tables');
     }
 };

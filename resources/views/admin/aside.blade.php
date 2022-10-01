@@ -89,6 +89,15 @@
                   </p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{url('men-index')}}" class="nav-link">
+                  <i class="nav-icon fas fa-th"></i>
+                  <p>
+                    Men-product
+                    <span class="right badge badge-danger">click here</span>
+                  </p>
+                </a>
+              </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

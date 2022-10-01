@@ -7,7 +7,8 @@ use App\http\controllers\BannerController;
 use App\http\controllers\TrendController;
 use App\http\controllers\ShopController;
 use App\http\controllers\BlogController;
-
+use App\http\controllers\AuthController;
+use App\http\controllers\MenController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +20,7 @@ use App\http\controllers\BlogController;
 |
 */
 
+Route::get('/',[HomeController::class,'welcome']);
 
 Route::get('/user',[HomeController::class,'home']);
 Route::get('/banner',[HomeController::class,'banner']);
@@ -36,7 +38,9 @@ Route::get('/checkout.html',[HomeController::class,'checkout']);
 Route::get('/blog-details.html',[HomeController::class,'BlogDetails']);
 //Route::get('/test',[HomeController::class,'test']);
 
-
+//admin login
+Route::get('/admin-login',[AuthController::class,'login']);
+Route::post('/admin-login-check',[AuthController::class,'loginProcess']);
 //adminsite
 Route::get('/admin',[AdminController::class,'home']);
 Route::get('/slider-index',[AdminController::class,'index']);
@@ -82,3 +86,11 @@ Route::get('/blog-view/{id}',[BlogController::class,'BlogView']);
 Route::get('/blog-edit/{id}',[BlogController::class,'BlogEdit']);
 Route::get('/blog-delete/{id}',[BlogController::class,'BlogDelete']);
 Route::post('/blog-update',[BlogController::class,'BlogUpdate']);
+
+//Men product
+Route::get('/men-product',[MenController::class,'men']);
+
+Route::get('/men-create',[MenController::class,'MenForm']);
+Route::post('/men-store',[MenController::class,'MenStore']);
+Route::get('/men-index',[MenController::class,'MenIndex']);
+
