@@ -90,7 +90,11 @@ Route::post('/blog-update',[BlogController::class,'BlogUpdate']);
 //Men product
 Route::get('/men-product',[MenController::class,'men']);
 
-Route::get('/men-create',[MenController::class,'MenForm']);
-Route::post('/men-store',[MenController::class,'MenStore']);
-Route::get('/men-index',[MenController::class,'MenIndex']);
+Route::get('/men-create',[MenController::class,'Form']);
+Route::post('/men-store',[MenController::class,'Store']);
+Route::get('/men-index',[MenController::class,'Index']);
+Route::get('/men-view/{id}',[MenController::class,'View']);
+Route::get('/men-edit/{id}',[MenController::class,'Edit']);
+Route::get('/men-delete/{id}',[MenController::class,'Delete']);
+Route::post('/men-update',[MenController::class,'Update']);
 

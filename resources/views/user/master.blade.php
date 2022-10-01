@@ -82,6 +82,8 @@
 
 <!-- Categories Section Begin -->
 
+
+
 <!-- Categories Section End -->
 
 <!-- Instagram Section Begin -->
@@ -138,6 +140,7 @@
     </div>
 </section>
 <!-- Latest Blog Section End -->
+
 
 <!-- Footer Section Begin -->
 

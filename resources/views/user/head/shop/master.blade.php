@@ -38,6 +38,7 @@
                 <div class="product__item__text">
                     <h6>{{ $shop->heading_1 }}</h6>
                     <a href="#" class="add-cart">+ Add To Cart</a>
+
                     <div class="rating">
                         <i class="fa fa-star-o"></i>
                         <i class="fa fa-star-o"></i>
@@ -74,6 +75,7 @@
                 <div class="product__item__text">
                     <h6>{{ $shop->heading_2 }}</h6>
                     <a href="#" class="add-cart">+ Add To Cart</a>
+
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>

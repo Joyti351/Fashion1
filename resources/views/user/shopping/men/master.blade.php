@@ -21,13 +21,13 @@
             </div>
         </div>
     </div>
-    @foreach ($data['shops'] as $shop)
+    @foreach ($data['mens'] as $men)
 
 
     <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="product__item">
-                <div class="product__item__pic set-bg" data-setbg="{{asset($shop->image_1)}}">
+                <div class="product__item__pic set-bg" data-setbg="{{asset($men->image_1)}}">
                     <ul class="product__hover">
                         <li><a href="#"><img src="{{asset('fashion/img/icon/heart.png')}}" alt=""></a></li>
                         <li><a href="#"><img src="{{asset('fashion/img/icon/compare.png')}}" alt=""> <span>Compare</span></a>
@@ -36,7 +36,7 @@
                     </ul>
                 </div>
                 <div class="product__item__text">
-                    <h6>{{ $shop->heading_1 }}</h6>
+                    <h6>{{ $men->heading_1 }}</h6>
                     <a href="#" class="add-cart">+ Add To Cart</a>
                     <div class="rating">
                         <i class="fa fa-star-o"></i>
@@ -45,7 +45,7 @@
                         <i class="fa fa-star-o"></i>
                         <i class="fa fa-star-o"></i>
                     </div>
-                    <h5>{{ $shop->blance_1 }}</h5>
+                    <h5>{{ $men->blance_1 }}</h5>
                     <div class="product__color__select">
                         <label for="pc-4">
                             <input type="radio" id="pc-4">
@@ -62,7 +62,7 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="product__item sale">
-                <div class="product__item__pic set-bg" data-setbg="{{asset($shop->image_2)}}">
+                <div class="product__item__pic set-bg" data-setbg="{{asset($men->image_2)}}">
                     <span class="label">Sale</span>
                     <ul class="product__hover">
                         <li><a href="#"><img src="{{asset('fashion/img/icon/heart.png')}}" alt=""></a></li>
@@ -72,7 +72,7 @@
                     </ul>
                 </div>
                 <div class="product__item__text">
-                    <h6>{{ $shop->heading_2 }}</h6>
+                    <h6>{{ $men->heading_2 }}</h6>
                     <a href="#" class="add-cart">+ Add To Cart</a>
                     <div class="rating">
                         <i class="fa fa-star"></i>
@@ -81,7 +81,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-o"></i>
                     </div>
-                    <h5>{{ $shop->blance_2 }}</h5>
+                    <h5>{{ $men->blance_2 }}</h5>
                     <div class="product__color__select">
                         <label for="pc-7">
                             <input type="radio" id="pc-7">
@@ -98,7 +98,7 @@
         </div>
         <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="product__item">
-                <div class="product__item__pic set-bg" data-setbg="{{asset($shop->image_3)}}">
+                <div class="product__item__pic set-bg" data-setbg="{{asset($men->image_3)}}">
                     <ul class="product__hover">
                         <li><a href="#"><img src="{{asset('fashion/img/icon/heart.png')}}" alt=""></a></li>
                         <li><a href="#"><img src="{{asset('fashion/img/icon/compare.png')}}" alt=""> <span>Compare</span></a>
@@ -107,7 +107,7 @@
                     </ul>
                 </div>
                 <div class="product__item__text">
-                    <h6>{{ $shop->heading_3 }}</h6>
+                    <h6>{{ $men->heading_3 }}</h6>
                     <a href="#" class="add-cart">+ Add To Cart</a>
                     <div class="rating">
                         <i class="fa fa-star-o"></i>
@@ -116,7 +116,7 @@
                         <i class="fa fa-star-o"></i>
                         <i class="fa fa-star-o"></i>
                     </div>
-                    <h5>{{ $shop->blance_3 }}</h5>
+                    <h5>{{ $men->blance_3 }}</h5>
                     <div class="product__color__select">
                         <label for="pc-10">
                             <input type="radio" id="pc-10">

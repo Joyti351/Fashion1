@@ -62,9 +62,9 @@
                   <td>@if($data->status == true) <span class = "text-info" > Active </span> @else <span class = "text-danger" > Inactive </span> @endif</td>
 
                   <td>
-                    <a type="button" href="{{ url('shop-edit',$data->id) }}" class="btn btn-secondary"><i class="far fa-edit"></i></a>
-                    <a type="button" href="{{ url('shop-view',$data->id) }}" class="btn btn-success"><i class="far fa-eye-slash"></i></a>
-                    <a type="button" href="{{ url('shop-delete',$data->id) }}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
+                    <a type="button" href="{{ url('men-edit',$data->id) }}" class="btn btn-secondary"><i class="far fa-edit"></i></a>
+                    <a type="button" href="{{ url('men-view',$data->id) }}" class="btn btn-success"><i class="far fa-eye-slash"></i></a>
+                    <a type="button" href="{{ url('men-delete',$data->id) }}" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a>
                 </tr>
                 </tr>
               @endforeach
